@@ -9,6 +9,7 @@ model hugging face repo: https://huggingface.co/Salama1429/TTS_German_Speecht5_f
 from transformers import pipeline
 
 pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl")
+
 ---
 
 ---
