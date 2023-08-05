@@ -15,15 +15,13 @@ pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetune
 
 # Input your desired text
 output_audio = pipe(desired_text)
-
-
-<pre>
 ```
-language:nl
+
+```yaml
+language: nl
 datasets: facebook/voxpopuli
 pipeline_tag: text-to-speech
 ```
- </pre>
 
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
 should probably proofread and complete it, then remove this comment. -->
