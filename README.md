@@ -1,5 +1,6 @@
 # Text-to-speech_TTS_Model_Training
-Training Text to speech model for German Language
+In this repo i'am sharing my German TTS model
+(Training Text to speech model for German Language)
 
 model hugging face repo: https://huggingface.co/Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl
 
