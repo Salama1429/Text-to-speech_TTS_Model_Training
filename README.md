@@ -23,46 +23,42 @@ datasets: facebook/voxpopuli
 pipeline_tag: text-to-speech
 ```
 
-<!-- This model card has been generated automatically according to the information the Trainer had access to. You
-should probably proofread and complete it, then remove this comment. -->
 
-# TTS_German_Speecht5_finetuned_voxpopuli_nl
+## About the Model
 
-This model is a fine-tuned version of [microsoft/speecht5_tts](https://huggingface.co/microsoft/speecht5_tts) on the facebook/voxpopuli dataset.
-It achieves the following results on the evaluation set:
+The `TTS_German_Speecht5_finetuned_voxpopuli_nl` model is a fine-tuned version of the [microsoft/speecht5_tts](https://huggingface.co/microsoft/speecht5_tts) model on the `facebook/voxpopuli` dataset. During evaluation, the model achieved the following results:
+
 - Loss: 0.4593
 
+## Training Procedure
 
+### Training Hyperparameters
 
-## Training procedure
+The model was trained using the following hyperparameters:
+- Learning Rate: 1e-05
+- Training Batch Size: 4
+- Evaluation Batch Size: 2
+- Seed: 42
+- Gradient Accumulation Steps: 8
+- Total Train Batch Size: 32
+- Optimizer: Adam with betas=(0.9, 0.999) and epsilon=1e-08
+- Learning Rate Scheduler Type: Linear
+- Learning Rate Scheduler Warmup Steps: 500
+- Training Steps: 4000
 
-### Training hyperparameters
+### Training Results
 
-The following hyperparameters were used during training:
-- learning_rate: 1e-05
-- train_batch_size: 4
-- eval_batch_size: 2
-- seed: 42
-- gradient_accumulation_steps: 8
-- total_train_batch_size: 32
-- optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
-- lr_scheduler_type: linear
-- lr_scheduler_warmup_steps: 500
-- training_steps: 4000
+| Training Loss | Epoch | Step  | Validation Loss |
+|:-------------:|:-----:|:-----:|:---------------:|
+| 0.5248        | 4.3   | 1000  | 0.4792          |
+| 0.5019        | 8.61  | 2000  | 0.4663          |
+| 0.4937        | 12.91 | 3000  | 0.4609          |
+| 0.4896        | 17.21 | 4000  | 0.4593          |
 
-### Training results
-
-| Training Loss | Epoch | Step | Validation Loss |
-|:-------------:|:-----:|:----:|:---------------:|
-| 0.5248        | 4.3   | 1000 | 0.4792          |
-| 0.5019        | 8.61  | 2000 | 0.4663          |
-| 0.4937        | 12.91 | 3000 | 0.4609          |
-| 0.4896        | 17.21 | 4000 | 0.4593          |
-
-
-### Framework versions
+### Framework Versions
 
 - Transformers 4.30.2
-- Pytorch 2.0.1+cu118
+- PyTorch 2.0.1+cu118
 - Datasets 2.13.1
 - Tokenizers 0.13.3
+
