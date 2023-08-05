@@ -3,14 +3,15 @@ Training Text to speech model for German Language
 
 model hugging face repo: https://huggingface.co/Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl
 
-## Model Usage
----
+# Model Usage
+<pre>
+ ```
 # Use a pipeline as a high-level helper
 from transformers import pipeline
-
 pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl")
+```
+</pre>
 
----
 
 ---
 language:
