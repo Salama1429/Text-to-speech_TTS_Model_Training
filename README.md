@@ -13,19 +13,16 @@ pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetune
 </pre>
 
 
----
+```
 language:
 - nl
-license: mit
-tags:
-- generated_from_trainer
 datasets:
 - facebook/voxpopuli
 model-index:
 - name: TTS_German_Speecht5_finetuned_voxpopuli_nl
   results: []
 pipeline_tag: text-to-speech
----
+```
 
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
 should probably proofread and complete it, then remove this comment. -->
