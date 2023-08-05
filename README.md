@@ -11,6 +11,9 @@ you can find the model on my hugging face repo: https://huggingface.co/Salama142
 from transformers import pipeline
 pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl")
 
+ #then input your desired text
+ pipe(desired_text)
+
 </pre>
 
 <pre>
