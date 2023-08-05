@@ -1,20 +1,21 @@
-# Text-to-speech_TTS_Model_Training
-In this repo i'am sharing my German TTS model
-(Training Text to speech model for German Language)
+# Text-to-Speech TTS Model Training for German Language
 
-you can find the model on my hugging face repo: https://huggingface.co/Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl
+Welcome to my repository where I share my German Text-to-Speech (TTS) model trained using Hugging Face Transformers.
 
-# Model Usage
-<pre>
- 
+You can find the trained model on my Hugging Face Model Hub: [Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl](https://huggingface.co/Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl)
+
+## Model Usage
+
+To use the TTS model, you can follow these steps:
+
+```python
 # Use a pipeline as a high-level helper
 from transformers import pipeline
 pipe = pipeline("text-to-speech", model="Salama1429/TTS_German_Speecht5_finetuned_voxpopuli_nl")
 
-#then input your desired text
-pipe(desired_text)
+# Input your desired text
+output_audio = pipe(desired_text)
 
-</pre>
 
 <pre>
 ```
